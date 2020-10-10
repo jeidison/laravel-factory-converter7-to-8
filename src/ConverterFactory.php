@@ -8,10 +8,10 @@ use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\Facades\File;
 use ReflectionClass;
 
-class UpgradeFactory
+class ConverterFactory
 {
     /**
-     * @var UpdateParam
+     * @var ConverterParam
      */
     private $param;
 
@@ -20,13 +20,13 @@ class UpgradeFactory
      */
     private $stubBase;
 
-    public function __construct(?UpdateParam $param = null)
+    public function __construct(?ConverterParam $param = null)
     {
-        $this->param = $param ?? new UpdateParam;
+        $this->param = $param ?? new ConverterParam;
         $this->stubBase = file_get_contents(__DIR__ . '/Factory.stub');
     }
 
-    public function upgrade()
+    public function convert()
     {
         File::makeDirectory($this->param->getPathFactoryDest());
         $files = File::allFiles($this->param->getPathFactoryOrigin());

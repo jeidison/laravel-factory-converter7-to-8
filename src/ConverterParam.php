@@ -3,12 +3,12 @@
 namespace Jeidison\Factory7to8;
 
 /**
- * Class UpdateParam
+ * Class ConverterParam
  * @package Jeidison\Factory7to8
  *
  * @author  Jeidison Farias <jeidison.farias@gmail.com>
  */
-class UpdateParam
+class ConverterParam
 {
     /**
      * path origin factories
@@ -44,9 +44,9 @@ class UpdateParam
 
     /**
      * @param string $pathFactoryOrigin
-     * @return UpdateParam
+     * @return ConverterParam
      */
-    public function setPathFactoryOrigin(string $pathFactoryOrigin): UpdateParam
+    public function setPathFactoryOrigin(string $pathFactoryOrigin): ConverterParam
     {
         $this->pathFactoryOrigin = $pathFactoryOrigin;
         return $this;
@@ -62,9 +62,9 @@ class UpdateParam
 
     /**
      * @param string $pathFactoryDest
-     * @return UpdateParam
+     * @return ConverterParam
      */
-    public function setPathFactoryDest(string $pathFactoryDest): UpdateParam
+    public function setPathFactoryDest(string $pathFactoryDest): ConverterParam
     {
         $this->pathFactoryDest = $pathFactoryDest;
         return $this;
@@ -80,9 +80,9 @@ class UpdateParam
 
     /**
      * @param array|string[] $defaultNamespaces
-     * @return UpdateParam
+     * @return ConverterParam
      */
-    public function setDefaultNamespaces(array $defaultNamespaces): UpdateParam
+    public function setDefaultNamespaces(array $defaultNamespaces): ConverterParam
     {
         $this->defaultNamespaces = $defaultNamespaces;
         return $this;

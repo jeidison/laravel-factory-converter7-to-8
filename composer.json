@@ -1,7 +1,7 @@
 {
-    "name": "jeidison/laravel-upgrade-factory7-to-8",
+    "name": "jeidison/laravel-convert-factory7-to-8",
     "description": "Laravel update migration of 7 to 8",
-    "keywords": ["php", "upgrade", "factory", "laravel"],
+    "keywords": ["php", "convert", "factory", "laravel"],
     "license": "MIT",
     "authors": [
         {

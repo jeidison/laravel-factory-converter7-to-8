@@ -1,4 +1,4 @@
-# Converter factories laravel <= 7 to 8
+# Converter factories laravel 7 to 8
  
 ## Install
 
@@ -8,7 +8,7 @@
 "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/jeidison/laravel-upgrade-factory7-to-8.git"
+            "url": "https://github.com/jeidison/laravel-convert-factory7-to-8.git"
         }
     ],
 
@@ -17,7 +17,7 @@
 "require-dev": {
     ...
     
-    "jeidison/laravel-upgrade-factory7-to-8": "@dev"
+    "jeidison/laravel-convert-factory7-to-8": "@dev"
     ...
 }
 ```
@@ -28,10 +28,10 @@ $ composer update
  
 ```php
 ...
-use Jeidison\Factory7to8\UpgradeFactory;
+use Jeidison\Factory7to8\ConverterFactory;
 
 ...
 
-$instance = new UpgradeFactory;
-$instance->upgrade();
+$instance = new ConverterFactory;
+$instance->convert();
 ```
