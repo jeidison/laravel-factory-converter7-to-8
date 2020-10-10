@@ -1,0 +1,27 @@
+{
+    "name": "jeidison/laravel-upgrade-factory7-to-8",
+    "description": "Laravel update migration of 7 to 8",
+    "keywords": ["php", "upgrade", "factory", "laravel"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeidison Farias",
+            "email": "jeidison.farias@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "laravel/framework": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jeidison\\Factory7to8\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist"
+    }
+}
