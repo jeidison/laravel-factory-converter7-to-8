@@ -1,6 +1,6 @@
-# Converter factories laravel 7 to 8
+# Laravel Factory Converter of 7 to 8 style
  
-## Install
+## Installation
 
 ### composer.json
 
@@ -8,7 +8,7 @@
 "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/jeidison/laravel-convert-factory7-to-8.git"
+            "url": "https://github.com/jeidison/laravel-factory-converter7-to-8.git"
         }
     ],
 
@@ -17,7 +17,7 @@
 "require-dev": {
     ...
     
-    "jeidison/laravel-convert-factory7-to-8": "@dev"
+    "jeidison/laravel-factory-converter7-to-8": "@dev"
     ...
 }
 ```
@@ -26,7 +26,7 @@
 $ composer update
 ```
 
-## using
+## Usage
  
 ```php
 ...
